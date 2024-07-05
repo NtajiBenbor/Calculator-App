@@ -1,0 +1,170 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #000000;
+    --btn-color: #181818;
+    --grey-btn:#6a6a6a;
+    --secondary-color: #ffffff;;
+    --equal-btn: #0388bd;
+    --scondary-btn:#052fab;
+}
+
+body{
+   
+    font-weight: 700;
+    font-size: 100%;
+    background-color: #edf6f9;
+    font-family: monospace;
+   
+    
+}
+
+
+/* ===UTILITY STYLES=== */
+.cols{
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.rows{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===LAYOUT STYLES=== */
+
+
+/* outer container */
+.container{ 
+    width: 350px;
+    max-width: 50%;
+    display: block;
+    margin: 3em auto 0 auto;
+    /* outline: 1px solid red; */
+    padding: .8em;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    font-family: inherit;
+    
+
+}
+
+
+/* keypad container */
+.keys-container{
+    width: 100%;
+    /* outline: 2px solid yellow; */
+    display: flex;
+    justify-content: space-around;
+    font-family: inherit;
+}
+
+
+/* number pads */
+.left-numpad{
+    width: 70%;
+}
+.right-numpad{
+    width: 20%;
+    /* outline: 2px solid magenta; */
+
+}
+
+/*top half of right number pada all digits except 0 & .*/
+.top-keys{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* outline: 3px solid green ; */
+}
+
+.bottom-keys{
+    /* outline: 3px solid orange; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.bottom-keys .long-btn{
+    flex-basis: 63.5%;
+}
+
+/* ====BUTTON STYLES=== */
+
+.btn{
+    padding: 1em;
+    margin: .6em 0;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    font-size: 1.3em;
+    background-color: var(--btn-color);
+    color: var(--equal-btn);
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn:active{
+    background-color: red;
+    color: var(--secondary-color);
+}
+
+.grey-btn{
+    background-color: var(--grey-btn);
+    color: var(--secondary-color);
+}
+
+.long-btn-blue, .blue-btn {
+    background-color: var(--scondary-btn);
+    color: var(--secondary-color);
+}
+
+#dot-btn{
+    padding: 0 1.5em;
+}
+
+.rows{
+    /* outline: 1px solid blue; */
+}
+
+.long-btn-blue{
+    padding: 2.1em 0; 
+}
+
+.equal{
+    background-color: var(--equal-btn);
+}
+
+/* ===DISPLAY=== */
+
+#form{
+
+    /* outline: 2px solid red; */
+}
+
+.display{
+    width: 90%;
+    height: 80px;
+    background-color: inherit;
+    text-align: right;
+    color: var(--secondary-color);
+    padding: .5em .5em 0 .5em;
+    font-weight: 900;
+    font-size: 2.5em;
+    border: none;
+    pointer-events: none;
+    margin: 1em auto;
+    text-wrap:wrap;
+    font-family: inherit;
+    
+
+}
+
+
+
+
+
