@@ -44,7 +44,6 @@ body{
     max-width: 50%;
     display: block;
     margin: 3em auto 0 auto;
-    /* outline: 1px solid red; */
     padding: .8em;
     background-color: var(--primary-color);
     border-radius: 20px;
@@ -57,7 +56,6 @@ body{
 /* keypad container */
 .keys-container{
     width: 100%;
-    /* outline: 2px solid yellow; */
     display: flex;
     justify-content: space-around;
     font-family: inherit;
@@ -70,20 +68,16 @@ body{
 }
 .right-numpad{
     width: 20%;
-    /* outline: 2px solid magenta; */
-
 }
 
-/*top half of right number pada all digits except 0 & .*/
+/*=====top half of right number pada all digits except 0 & .===*/
 .top-keys{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    /* outline: 3px solid green ; */
 }
 
 .bottom-keys{
-    /* outline: 3px solid orange; */
     display: flex;
     justify-content: space-between;
 }
@@ -127,9 +121,7 @@ body{
     padding: 0 1.5em;
 }
 
-.rows{
-    /* outline: 1px solid blue; */
-}
+
 
 .long-btn-blue{
     padding: 2.1em 0; 
@@ -140,11 +132,6 @@ body{
 }
 
 /* ===DISPLAY=== */
-
-#form{
-
-    /* outline: 2px solid red; */
-}
 
 .display{
     width: 90%;
@@ -160,8 +147,6 @@ body{
     margin: 1em auto;
     text-wrap:wrap;
     font-family: inherit;
-    
-
 }
 
 
